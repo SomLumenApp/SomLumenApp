@@ -1,122 +1,350 @@
-TERMINI DI SERVIZIO DI SOMLUMEN
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f1ea" />
+  <title>Termini di Servizio - SomLumen</title>
+  <style>
 
-Data di entrata in vigore: 21 Marzo 2026
+    :root {
+      --bg: #f6f1ea;
+      --surface: #fffdfc;
+      --surface-soft: #f7eee7;
+      --surface-alt: #f2e7e0;
+      --text: #2b221e;
+      --text-secondary: #6b5c54;
+      --text-muted: #95877e;
+      --brand: #7a2326;
+      --brand-pressed: #651c1f;
+      --border: #e6d8cc;
+      --shadow: 0 8px 24px rgba(53, 35, 28, 0.08);
+      --radius: 18px;
+      --radius-sm: 12px;
+      --maxw: 920px;
+    }
 
-Benvenuto in SomLumen. I presenti Termini di Servizio disciplinano l’accesso e l’uso dell’app SomLumen e dei servizi collegati.
+    * { box-sizing: border-box; }
 
-Utilizzando SomLumen, l’utente dichiara di aver letto, compreso e accettato i presenti Termini.
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
 
-1. CHI SIAMO
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      line-height: 1.68;
+      font-size: 16px;
+    }
 
-SomLumen è un’app dedicata alla gestione della cantina personale e all’accesso a funzionalità di supporto sommelier, inclusi suggerimenti di abbinamento e schede vino generate con supporto AI.
+    .page {
+      width: min(100%, var(--maxw));
+      margin: 0 auto;
+      padding: 20px 16px 48px;
+    }
 
-Operatore del servizio:
-Enzo Petrassi
-Contatti: somlumen@gmail.com
+    .hero {
+      background: linear-gradient(180deg, var(--surface-soft), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px 18px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
 
-2. ACCOUNT
+    .brand {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
 
-Per accedere a determinate funzionalità può essere necessario creare un account.
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 42px);
+      line-height: 1.05;
+      font-weight: 700;
+      color: var(--text);
+    }
 
-L’utente si impegna a:
-- fornire informazioni corrette e aggiornate
-- mantenere riservate le proprie credenziali
-- non condividere l’account in modo improprio
-- informarci tempestivamente in caso di accesso non autorizzato
+    .subtitle {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
 
-L’utente è responsabile delle attività svolte tramite il proprio account, salvo i casi previsti dalla legge.
+    .meta {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
 
-3. UTILIZZO DEL SERVIZIO
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 18px;
+    }
 
-SomLumen consente, tra l’altro, di:
-- registrare e gestire bottiglie nella propria cantina digitale
-- consultare informazioni su vino, servizio e beva
-- ottenere suggerimenti di abbinamento cibo-vino
-- generare e salvare schede vino AI
-- consultare lo storico di abbinamenti e contenuti correlati
+    .toc a, .footer-links a {
+      text-decoration: none;
+      color: var(--brand);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 12px;
+      font-size: 14px;
+      line-height: 1.2;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+    }
 
-4. FUNZIONALITÀ AI E LIMITI DEL SERVIZIO
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
 
-SomLumen può fornire suggerimenti e contenuti generati con supporto AI.
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(22px, 4.6vw, 28px);
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--text);
+    }
 
-L’utente accetta che:
-- i suggerimenti AI hanno finalità informative e di supporto
-- i risultati possono non essere sempre completi, corretti o adatti a ogni situazione
-- le decisioni finali su consumo, acquisto, servizio o abbinamento restano dell’utente
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: var(--text);
+    }
 
-SomLumen non garantisce che i contenuti generati siano sempre privi di errori o perfettamente adatti alle preferenze personali dell’utente.
+    p {
+      margin: 0 0 12px;
+      color: var(--text-secondary);
+    }
 
-5. CONTENUTI DELL’UTENTE
+    ul {
+      margin: 0 0 12px 18px;
+      padding: 0;
+      color: var(--text-secondary);
+    }
 
-L’utente mantiene i diritti sui contenuti inseriti nell’app, nei limiti consentiti dalla legge.
+    li {
+      margin-bottom: 8px;
+    }
 
-Caricando o inserendo contenuti, l’utente ci autorizza a trattarli nella misura necessaria a:
-- fornire il servizio
-- salvare, sincronizzare e mostrare i dati nell’app
-- elaborare richieste AI e suggerimenti collegati
-- migliorare la sicurezza e il funzionamento tecnico del servizio
+    strong {
+      color: var(--text);
+    }
 
-L’utente garantisce di avere il diritto di utilizzare i contenuti immessi e di non violare diritti di terzi.
+    a {
+      color: var(--brand);
+    }
 
-6. USI VIETATI
+    .note {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
 
-L’utente non può:
-- usare SomLumen per finalità illecite
-- tentare di accedere a account, sistemi o dati senza autorizzazione
-- interferire con il funzionamento del servizio
-- utilizzare l’app per attività abusive, fraudolente o dannose
-- copiare, decompilare o sfruttare impropriamente il servizio, salvo quanto consentito dalla legge
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
 
-7. SOSPENSIONE O CHIUSURA DELL’ACCOUNT
+    .cta:active {
+      background: var(--brand-pressed);
+    }
 
-Possiamo sospendere o chiudere l’accesso all’account in caso di:
-- violazione dei presenti Termini
-- uso illecito o abusivo del servizio
-- rischi per sicurezza, integrità del sistema o diritti di terzi
-- obblighi di legge
+    .footer {
+      margin-top: 18px;
+      padding: 16px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
 
-L’utente può eliminare il proprio account tramite l’app, se disponibile, o tramite la procedura indicata nella Privacy Policy.
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
 
-8. DISPONIBILITÀ DEL SERVIZIO
+    @media (min-width: 768px) {
+      body { font-size: 17px; }
+      .page { padding: 28px 20px 56px; }
+      .hero { padding: 28px 24px; }
+      .section { padding: 22px 20px; }
+    }
 
-Ci impegniamo a mantenere SomLumen disponibile e funzionante, ma non garantiamo disponibilità continua e priva di interruzioni.
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">SomLumen · AI Cellar &amp; Sommelier</div>
+      <h1>Termini di Servizio</h1>
+      <p class="subtitle">Condizioni di utilizzo dell’app SomLumen e dei servizi collegati.</p>
+      <div class="meta">Data di entrata in vigore: 21/03/2026</div>
+    </header>
 
-Possiamo modificare, sospendere o aggiornare il servizio per esigenze tecniche, di sicurezza, manutenzione o evoluzione del prodotto.
+    <nav class="toc" aria-label="Indice">
+      <a href="#chi-siamo">Chi siamo</a>
+      <a href="#account">Account</a>
+      <a href="#uso">Uso del servizio</a>
+      <a href="#ai">Funzioni AI</a>
+      <a href="#responsabilita">Responsabilità</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
 
-9. LIMITAZIONE DI RESPONSABILITÀ
+    <section class="section" id="chi-siamo">
+      <h2>Chi siamo</h2>
+      <p>SomLumen è un’app dedicata alla gestione della cantina personale e all’accesso a funzionalità di supporto sommelier, inclusi suggerimenti di abbinamento e schede vino generate con supporto AI.</p>
+      <p><strong>Operatore del servizio:</strong> Enzo Petrassi<br />
+      Email: <a href="mailto:somlumen@gmail.com">somlumen@gmail.com</a><br />
+      Roma, Italia</p>
+    </section>
 
-Nei limiti consentiti dalla legge:
-- SomLumen è fornita “così com’è” e “come disponibile”
-- non garantiamo che il servizio sia sempre privo di errori o interruzioni
-- non siamo responsabili per decisioni prese dall’utente sulla base di suggerimenti, pairing o contenuti AI
-- non siamo responsabili per danni indiretti, perdita di dati, mancati guadagni o danni consequenziali, salvo dolo o colpa grave ove non escludibile
+    <section class="section" id="account">
+      <h2>Account</h2>
+      <p>Per accedere a determinate funzionalità può essere necessario creare un account.</p>
+      <p>L’utente si impegna a:</p>
+      <ul>
+        <li>fornire informazioni corrette e aggiornate;</li>
+        <li>mantenere riservate le proprie credenziali;</li>
+        <li>non condividere l’account in modo improprio;</li>
+        <li>informarci tempestivamente in caso di accesso non autorizzato.</li>
+      </ul>
+      <p>L’utente è responsabile delle attività svolte tramite il proprio account, salvo i casi previsti dalla legge.</p>
+    </section>
 
-Nulla nei presenti Termini esclude responsabilità che non possano essere escluse ai sensi della legge applicabile.
+    <section class="section" id="uso">
+      <h2>Utilizzo del servizio</h2>
+      <p>SomLumen consente, tra l’altro, di:</p>
+      <ul>
+        <li>registrare e gestire bottiglie nella propria cantina digitale;</li>
+        <li>consultare informazioni su vino, servizio e beva;</li>
+        <li>ottenere suggerimenti di abbinamento cibo-vino;</li>
+        <li>generare e salvare schede vino AI;</li>
+        <li>consultare lo storico di abbinamenti e contenuti correlati.</li>
+      </ul>
+    </section>
 
-10. PROPRIETÀ INTELLETTUALE
+    <section class="section" id="ai">
+      <h2>Funzionalità AI e limiti del servizio</h2>
+      <p>SomLumen può fornire suggerimenti e contenuti generati con supporto AI. L’utente accetta che tali risultati abbiano finalità informative e di supporto.</p>
+      <p>I suggerimenti possono non essere sempre completi, corretti o adatti a ogni situazione. Le decisioni finali su consumo, acquisto, servizio o abbinamento restano dell’utente.</p>
+      <div class="note">SomLumen non garantisce che i contenuti generati siano sempre privi di errori o perfettamente adatti alle preferenze personali dell’utente.</div>
+    </section>
 
-Il servizio, il marchio SomLumen, l’interfaccia, il design, il software e i contenuti di nostra proprietà restano di nostra titolarità o dei rispettivi licenzianti.
+    <section class="section" id="contenuti">
+      <h2>Contenuti dell’utente</h2>
+      <p>L’utente mantiene i diritti sui contenuti inseriti nell’app, nei limiti consentiti dalla legge.</p>
+      <p>Inserendo contenuti, l’utente autorizza SomLumen a trattarli nella misura necessaria a fornire il servizio, salvare, sincronizzare e mostrare i dati nell’app, elaborare richieste AI e garantire sicurezza e funzionamento tecnico del servizio.</p>
+      <p>L’utente garantisce di avere il diritto di utilizzare i contenuti immessi e di non violare diritti di terzi.</p>
+    </section>
 
-I presenti Termini non trasferiscono all’utente alcun diritto di proprietà intellettuale sul servizio, salvo il diritto limitato di usare l’app secondo quanto qui previsto.
+    <section class="section" id="usi-vietati">
+      <h2>Usi vietati</h2>
+      <p>L’utente non può:</p>
+      <ul>
+        <li>usare SomLumen per finalità illecite;</li>
+        <li>tentare di accedere a account, sistemi o dati senza autorizzazione;</li>
+        <li>interferire con il funzionamento del servizio;</li>
+        <li>utilizzare l’app per attività abusive, fraudolente o dannose;</li>
+        <li>copiare, decompilare o sfruttare impropriamente il servizio, salvo quanto consentito dalla legge.</li>
+      </ul>
+    </section>
 
-11. PRIVACY
+    <section class="section" id="sospensione">
+      <h2>Sospensione o chiusura dell’account</h2>
+      <p>SomLumen può sospendere o chiudere l’accesso all’account in caso di violazione dei presenti Termini, uso illecito o abusivo del servizio, rischi per la sicurezza o obblighi di legge.</p>
+      <p>L’utente può eliminare il proprio account tramite l’app, se disponibile, o tramite la procedura indicata nella Privacy Policy.</p>
+    </section>
 
-L’uso dei dati personali è disciplinato dalla Privacy Policy di SomLumen:
-https://somlumenapp.github.io/SomLumenApp/privacy/
+    <section class="section" id="disponibilita">
+      <h2>Disponibilità del servizio</h2>
+      <p>Ci impegniamo a mantenere SomLumen disponibile e funzionante, ma non garantiamo disponibilità continua e priva di interruzioni. Possiamo modificare, sospendere o aggiornare il servizio per esigenze tecniche, di sicurezza, manutenzione o evoluzione del prodotto.</p>
+    </section>
 
-12. MODIFICHE AI TERMINI
+    <section class="section" id="responsabilita">
+      <h2>Limitazione di responsabilità</h2>
+      <p>Nei limiti consentiti dalla legge:</p>
+      <ul>
+        <li>SomLumen è fornita “così com’è” e “come disponibile”;</li>
+        <li>non garantiamo che il servizio sia sempre privo di errori o interruzioni;</li>
+        <li>non siamo responsabili per decisioni prese dall’utente sulla base di suggerimenti, pairing o contenuti AI;</li>
+        <li>non siamo responsabili per danni indiretti, perdita di dati, mancati guadagni o danni consequenziali, salvo dolo o colpa grave ove non escludibile.</li>
+      </ul>
+      <p>Nulla nei presenti Termini esclude responsabilità che non possano essere escluse ai sensi della legge applicabile.</p>
+    </section>
 
-Possiamo aggiornare i presenti Termini nel tempo. In caso di modifiche rilevanti, informeremo gli utenti con modalità appropriate. L’uso continuato del servizio dopo l’entrata in vigore delle modifiche costituisce accettazione dei nuovi Termini, salvo ove diversamente previsto dalla legge.
+    <section class="section" id="proprieta">
+      <h2>Proprietà intellettuale</h2>
+      <p>Il servizio, il marchio SomLumen, l’interfaccia, il design, il software e i contenuti di nostra proprietà restano di titolarità di Enzo Petrassi o dei rispettivi licenzianti.</p>
+    </section>
 
-13. LEGGE APPLICABILE E FORO
+    <section class="section" id="privacy">
+      <h2>Privacy</h2>
+      <p>L’uso dei dati personali è disciplinato dalla Privacy Policy di SomLumen.</p>
+      <a class="cta" href="https://somlumenapp.github.io/SomLumenApp/privacy/">Vai alla Privacy Policy</a>
+    </section>
 
-I presenti Termini sono regolati dalla legge di Roma Itala.
+    <section class="section" id="modifiche">
+      <h2>Modifiche ai Termini</h2>
+      <p>Possiamo aggiornare i presenti Termini nel tempo. In caso di modifiche rilevanti informeremo gli utenti con modalità appropriate. L’uso continuato del servizio dopo l’entrata in vigore delle modifiche costituisce accettazione dei nuovi Termini, salvo ove diversamente previsto dalla legge.</p>
+    </section>
 
-Per gli utenti consumatori residenti nell’Unione Europea restano salvi gli eventuali diritti inderogabili previsti dalla normativa del Paese di residenza.
+    <section class="section" id="legge">
+      <h2>Legge applicabile e foro</h2>
+      <p>I presenti Termini sono regolati dalla legge italiana.</p>
+      <p>Per gli utenti consumatori residenti nell’Unione Europea restano salvi gli eventuali diritti inderogabili previsti dalla normativa del Paese di residenza.</p>
+      <p>Se applicabile, per le controversie sarà competente il foro di Roma, salvo diritti inderogabili del consumatore.</p>
+    </section>
 
-Se applicabile, per le controversie sarà competente il foro di Roma Italia, salvo diritti inderogabili del consumatore.
+    <section class="section" id="contatti">
+      <h2>Contatti</h2>
+      <p>Per domande o richieste relative ai presenti Termini:</p>
+      <p><strong>Enzo Petrassi</strong><br />
+      <a href="mailto:somlumen@gmail.com">somlumen@gmail.com</a><br />
+      Roma, Italia</p>
+    </section>
 
-14. CONTATTI
-
-Per domande o richieste:
-somlumen@gmail.com
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://somlumenapp.github.io/SomLumenApp/privacy/">Privacy Policy</a>
+        <a href="https://somlumenapp.github.io/SomLumenApp/terms/">Termini di Servizio</a>
+        <a href="https://somlumenapp.github.io/SomLumenApp/delete-account/">Elimina account</a>
+      </div>
+      <div>SomLumen · AI Cellar &amp; Sommelier</div>
+    </footer>
+  </main>
+</body>
+</html>
