@@ -1,367 +1,226 @@
 <!doctype html>
 <html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#f6f1ea" />
-  <title>Privacy Policy - SomLumen</title>
-  <style>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SomLumen - Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0d0d10;
+        --panel: #17171c;
+        --panel-soft: #201a16;
+        --text: #f6efe8;
+        --muted: #c6b8ac;
+        --line: #3a312b;
+        --accent: #d4a64f;
+      }
 
-    :root {
-      --bg: #f6f1ea;
-      --surface: #fffdfc;
-      --surface-soft: #f7eee7;
-      --surface-alt: #f2e7e0;
-      --text: #2b221e;
-      --text-secondary: #6b5c54;
-      --text-muted: #95877e;
-      --brand: #7a2326;
-      --brand-pressed: #651c1f;
-      --border: #e6d8cc;
-      --shadow: 0 8px 24px rgba(53, 35, 28, 0.08);
-      --radius: 18px;
-      --radius-sm: 12px;
-      --maxw: 920px;
-    }
+      * { box-sizing: border-box; }
 
-    * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+          radial-gradient(circle at top right, rgba(212, 166, 79, 0.12), transparent 28%),
+          linear-gradient(180deg, #0b0b0f 0%, #17120f 100%);
+        color: var(--text);
+      }
 
-    html {
-      -webkit-text-size-adjust: 100%;
-      scroll-behavior: smooth;
-    }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 72px;
+      }
 
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      line-height: 1.68;
-      font-size: 16px;
-    }
+      .brand {
+        font: 600 12px/16px Arial, Helvetica, sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 12px;
+      }
 
-    .page {
-      width: min(100%, var(--maxw));
-      margin: 0 auto;
-      padding: 20px 16px 48px;
-    }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(36px, 7vw, 58px);
+        line-height: 0.98;
+      }
 
-    .hero {
-      background: linear-gradient(180deg, var(--surface-soft), var(--surface));
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 22px 18px;
-      box-shadow: var(--shadow);
-      margin-bottom: 18px;
-    }
+      .subtitle {
+        margin: 0 0 28px;
+        font: 400 18px/28px Arial, Helvetica, sans-serif;
+        color: var(--muted);
+        max-width: 760px;
+      }
 
-    .brand {
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
 
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(30px, 6vw, 42px);
-      line-height: 1.05;
-      font-weight: 700;
-      color: var(--text);
-    }
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        font: 600 14px/18px Arial, Helvetica, sans-serif;
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+      }
 
-    .subtitle {
-      margin: 0;
-      font-size: 15px;
-      color: var(--text-secondary);
-    }
+      section {
+        margin-bottom: 18px;
+        padding: 22px 22px 18px;
+        border-radius: 24px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+      }
 
-    .meta {
-      margin-top: 12px;
-      font-size: 14px;
-      color: var(--text-muted);
-    }
+      section:nth-of-type(odd) {
+        background: linear-gradient(180deg, rgba(35, 26, 20, 0.96), rgba(22, 22, 27, 0.98));
+      }
 
-    .toc {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 16px 0 18px;
-    }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        line-height: 30px;
+      }
 
-    .toc a, .footer-links a {
-      text-decoration: none;
-      color: var(--brand);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 10px 12px;
-      font-size: 14px;
-      line-height: 1.2;
-      min-height: 40px;
-      display: inline-flex;
-      align-items: center;
-    }
+      p, li {
+        font: 400 15px/24px Arial, Helvetica, sans-serif;
+        color: var(--muted);
+      }
 
-    .section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px 16px;
-      box-shadow: var(--shadow);
-      margin-bottom: 14px;
-    }
+      ul {
+        margin: 10px 0 0 18px;
+        padding: 0;
+      }
 
-    h2 {
-      margin: 0 0 12px;
-      font-size: clamp(22px, 4.6vw, 28px);
-      line-height: 1.15;
-      font-weight: 700;
-      color: var(--text);
-    }
+      strong {
+        color: var(--text);
+      }
 
-    h3 {
-      margin: 18px 0 8px;
-      font-size: 16px;
-      line-height: 1.3;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    p {
-      margin: 0 0 12px;
-      color: var(--text-secondary);
-    }
-
-    ul {
-      margin: 0 0 12px 18px;
-      padding: 0;
-      color: var(--text-secondary);
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    strong {
-      color: var(--text);
-    }
-
-    a {
-      color: var(--brand);
-    }
-
-    .note {
-      background: var(--surface-soft);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
-
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 12px 16px;
-      border-radius: 14px;
-      background: var(--brand);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      border: 1px solid transparent;
-    }
-
-    .cta:active {
-      background: var(--brand-pressed);
-    }
-
-    .footer {
-      margin-top: 18px;
-      padding: 16px;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 14px;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    @media (min-width: 768px) {
-      body { font-size: 17px; }
-      .page { padding: 28px 20px 56px; }
-      .hero { padding: 28px 24px; }
-      .section { padding: 22px 20px; }
-    }
-
-  </style>
-</head>
-<body>
-  <main class="page">
-    <header class="hero">
+      .meta {
+        margin-top: 30px;
+        font: 500 13px/20px Arial, Helvetica, sans-serif;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
       <div class="brand">SomLumen · AI Cellar &amp; Sommelier</div>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Informazioni su dati raccolti, finalità del trattamento, sicurezza, conservazione e diritti dell’utente.</p>
-      <div class="meta">Data di entrata in vigore: 21/03/2026</div>
-    </header>
+      <p class="subtitle">
+        Questa Privacy Policy descrive come SomLumen tratta i dati personali e i contenuti della tua cantina,
+        inclusa la funzione "Scatta etichetta".
+      </p>
 
-    <nav class="toc" aria-label="Indice">
-      <a href="#titolare">Titolare</a>
-      <a href="#dati">Dati raccolti</a>
-      <a href="#finalita">Finalità</a>
-      <a href="#condivisione">Condivisione</a>
-      <a href="#conservazione">Conservazione</a>
-      <a href="#cancellazione">Eliminazione account</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
-
-    <section class="section" id="titolare">
-      <h2>Titolare del trattamento</h2>
-      <p><strong>Enzo Petrassi</strong></p>
-      <p>Email di contatto: <a href="mailto:somlumen@gmail.com">somlumen@gmail.com</a></p>
-      <p>Roma, Italia</p>
-      <div class="note">SomLumen è un servizio digitale dedicato alla gestione della cantina personale e a funzionalità di supporto sommelier con componenti AI.</div>
-    </section>
-
-    <section class="section" id="dati">
-      <h2>Dati raccolti</h2>
-      <p>SomLumen può raccogliere e trattare le seguenti categorie di dati:</p>
-      <h3>Dati di account</h3>
-      <ul>
-        <li>username;</li>
-        <li>password o credenziali di accesso;</li>
-        <li>identificativi account o sessione.</li>
-      </ul>
-      <h3>Dati tecnici e identificativi del dispositivo</h3>
-      <ul>
-        <li>installation ID;</li>
-        <li>nome dispositivo o etichetta installazione, se disponibile;</li>
-        <li>piattaforma e versione dell’app;</li>
-        <li>informazioni tecniche necessarie al funzionamento, alla sicurezza e alla continuità del servizio.</li>
-      </ul>
-      <h3>Contenuti inseriti dall’utente</h3>
-      <ul>
-        <li>bottiglie, produttori, annate, tipologie, quantità e posizioni in cantina;</li>
-        <li>denominazione, regione/Paese, vitigni, finestra di beva, stato di beva, temperatura di servizio e decantazione;</li>
-        <li>note degustative, esame visivo, olfattivo e gustativo, struttura, chiusura, pairing, occasione e consigli su quando aprire il vino;</li>
-        <li>piatti inseriti per richieste di abbinamento, storico abbinamenti e schede vino AI salvate.</li>
-      </ul>
-    </section>
-
-    <section class="section" id="finalita">
-      <h2>Finalità del trattamento</h2>
-      <p>I dati vengono trattati per:</p>
-      <ul>
-        <li>creare e gestire l’account utente;</li>
-        <li>autenticare l’utente e mantenere attiva la sessione;</li>
-        <li>associare correttamente i dati della cantina all’account;</li>
-        <li>salvare, sincronizzare e mostrare bottiglie, storico abbinamenti e schede AI;</li>
-        <li>fornire funzioni di sommelier virtuale, pairing e generazione di contenuti AI;</li>
-        <li>mantenere sicurezza, integrità e affidabilità del servizio;</li>
-        <li>adempiere a eventuali obblighi di legge.</li>
-      </ul>
-    </section>
-
-    <section class="section" id="base-giuridica">
-      <h2>Base giuridica del trattamento</h2>
-      <p>Se l’utente si trova nello Spazio Economico Europeo, nel Regno Unito o in giurisdizioni con requisiti simili, il trattamento si basa, a seconda dei casi, su:</p>
-      <ul>
-        <li>esecuzione del contratto o di misure precontrattuali, per fornire l’account e le funzionalità dell’app;</li>
-        <li>adempimento di obblighi legali;</li>
-        <li>legittimo interesse del titolare, per sicurezza, manutenzione tecnica, prevenzione abusi e protezione del servizio.</li>
-      </ul>
-    </section>
-
-    <section class="section" id="condivisione">
-      <h2>Condivisione dei dati</h2>
-      <p>I dati possono essere trattati da fornitori di servizi che operano per conto di SomLumen, nella misura necessaria a fornire il servizio.</p>
-      <p>In particolare, richieste e contenuti relativi alle funzionalità AI possono essere elaborati tramite fornitori tecnologici incaricati dell’elaborazione del servizio.</p>
-      <p>SomLumen non vende i dati personali degli utenti.</p>
-      <p>I dati possono inoltre essere comunicati se richiesto dalla legge o da autorità competenti, oppure quando necessario per tutelare i diritti, la sicurezza o l’integrità del servizio.</p>
-    </section>
-
-    <section class="section" id="conservazione">
-      <h2>Conservazione dei dati</h2>
-      <p>I dati vengono conservati per il tempo necessario a:</p>
-      <ul>
-        <li>mantenere attivo l’account e fornire le funzionalità dell’app;</li>
-        <li>gestire la cantina e i contenuti associati all’utente;</li>
-        <li>garantire sicurezza, prevenzione frodi e continuità del servizio;</li>
-        <li>rispettare eventuali obblighi legali.</li>
-      </ul>
-      <p>Quando l’utente elimina l’account, i dati associati vengono eliminati o anonimizzati, salvo quelli che dobbiamo conservare per obblighi legali, sicurezza, prevenzione frodi o tutela dei nostri diritti.</p>
-    </section>
-
-    <section class="section" id="sicurezza">
-      <h2>Sicurezza</h2>
-      <p>Adottiamo misure tecniche e organizzative ragionevoli per proteggere i dati da accessi non autorizzati, perdita, uso improprio o divulgazione non consentita. Tuttavia nessun sistema può garantire sicurezza assoluta.</p>
-    </section>
-
-    <section class="section" id="trasferimenti">
-      <h2>Trasferimenti internazionali</h2>
-      <p>Alcuni dati possono essere trattati su infrastrutture o da fornitori situati fuori dal Paese dell’utente. In tali casi adottiamo misure adeguate per assicurare un livello di protezione conforme alla normativa applicabile.</p>
-    </section>
-
-    <section class="section" id="minori">
-      <h2>Minori</h2>
-      <p>SomLumen non è destinata a minori di 16 anni. Se veniamo a conoscenza della raccolta di dati in violazione della normativa applicabile, adotteremo misure ragionevoli per eliminarli.</p>
-    </section>
-
-    <section class="section" id="diritti">
-      <h2>Diritti dell’utente</h2>
-      <p>Nei limiti previsti dalla legge applicabile, l’utente può chiedere:</p>
-      <ul>
-        <li>accesso ai dati;</li>
-        <li>rettifica;</li>
-        <li>cancellazione;</li>
-        <li>limitazione del trattamento;</li>
-        <li>opposizione, ove applicabile;</li>
-        <li>portabilità, ove applicabile.</li>
-      </ul>
-      <p>Per esercitare i propri diritti è possibile scrivere a <a href="mailto:somlumen@gmail.com">somlumen@gmail.com</a>.</p>
-    </section>
-
-    <section class="section" id="cancellazione">
-      <h2>Eliminazione account</h2>
-      <p>È possibile richiedere l’eliminazione dell’account:</p>
-      <ul>
-        <li>direttamente dall’app, se la funzione è disponibile;</li>
-        <li>tramite la pagina web dedicata;</li>
-        <li>oppure contattando il supporto all’indirizzo <a href="mailto:somlumen@gmail.com">somlumen@gmail.com</a>.</li>
-      </ul>
-      <a class="cta" href="https://somlumenapp.github.io/SomLumenApp/delete-account/">Vai alla pagina di eliminazione account</a>
-    </section>
-
-    <section class="section" id="modifiche">
-      <h2>Modifiche alla presente policy</h2>
-      <p>Possiamo aggiornare questa Privacy Policy nel tempo. In caso di modifiche rilevanti informeremo gli utenti con modalità appropriate, ad esempio tramite app o aggiornamento della presente pagina.</p>
-    </section>
-
-    <section class="section" id="contatti">
-      <h2>Contatti</h2>
-      <p>Per domande relative alla privacy o al trattamento dei dati:</p>
-      <p><strong>Enzo Petrassi</strong><br />
-      <a href="mailto:somlumen@gmail.com">somlumen@gmail.com</a><br />
-      Roma, Italia</p>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="https://somlumenapp.github.io/SomLumenApp/privacy/">Privacy Policy</a>
+      <nav>
         <a href="https://somlumenapp.github.io/SomLumenApp/terms/">Termini di Servizio</a>
         <a href="https://somlumenapp.github.io/SomLumenApp/delete-account/">Elimina account</a>
-      </div>
-      <div>SomLumen · AI Cellar &amp; Sommelier</div>
-    </footer>
-  </main>
-</body>
-</html>
+      </nav>
+
+      <section>
+        <h2>1. Titolare e servizio</h2>
+        <p>
+          SomLumen e un'app dedicata alla gestione della cantina personale e alle funzionalita di supporto
+          sommelier. Il nome commerciale del servizio e <strong>SomLumen</strong> e il micro-brand usato
+          nell'app e <strong>AI Cellar &amp; Sommelier</strong>.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Dati trattati</h2>
+        <p>SomLumen puo trattare queste categorie di dati:</p>
+        <ul>
+          <li>dati account come nome utente e credenziali di accesso;</li>
+          <li>contenuti della tua cantina, come produttore, nome vino, annata e altri dati che scegli di salvare;</li>
+          <li>storico di pairing, schede vino AI e metadati tecnici di utilizzo del servizio;</li>
+          <li>
+            <strong>immagini e foto delle etichette</strong> quando usi la funzione "Scatta etichetta" o scegli
+            un'immagine dalla galleria;
+          </li>
+          <li>dati tecnici minimi come versione app, piattaforma, indirizzo IP e log tecnici di sicurezza/diagnosi.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Finalita del trattamento</h2>
+        <p>I dati vengono trattati per:</p>
+        <ul>
+          <li>consentire accesso, autenticazione, sincronizzazione e gestione dell'account;</li>
+          <li>salvare e sincronizzare i contenuti della tua cantina e dello storico abbinamenti;</li>
+          <li>fornire funzionalita di sommelier AI e generazione di schede vino;</li>
+          <li>
+            acquisire una foto dell'etichetta, analizzare l'immagine, estrarre <strong>produttore</strong>,
+            <strong>nome vino</strong> e <strong>annata</strong> e precompilare il form bottiglia;
+          </li>
+          <li>migliorare affidabilita, sicurezza, logging tecnico e diagnosi errori del servizio.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Funzione "Scatta etichetta"</h2>
+        <p>
+          Quando usi la funzione "Scatta etichetta", la foto viene inviata ai server di SomLumen per
+          l'elaborazione. Il backend usa fornitori di servizio AI per analizzare l'immagine e restituire
+          un risultato strutturato con produttore, nome vino e annata.
+        </p>
+        <p>
+          Il risultato serve a <strong>precompilare il form bottiglia</strong>. I dati vengono salvati nella tua
+          cantina solo se li confermi e decidi di completare il salvataggio della bottiglia.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Conservazione delle immagini</h2>
+        <p>
+          In base al comportamento attuale del backend, SomLumen <strong>non conserva in modo persistente</strong>
+          la foto dell'etichetta oltre il tempo tecnico necessario per elaborare la richiesta e restituire il
+          risultato al client.
+        </p>
+        <p>
+          SomLumen puo registrare soltanto metadati tecnici minimi della richiesta, ad esempio tempi di risposta,
+          dimensione input e livello di confidenza. La foto non viene salvata in chiaro nel database della cantina.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Fornitori di servizio e AI</h2>
+        <p>
+          Alcune funzionalita, inclusa l'analisi etichetta e altre funzioni AI, possono comportare il trattamento dei
+          dati tramite fornitori di servizio usati da SomLumen per l'elaborazione delle richieste. Tali trattamenti
+          avvengono esclusivamente per fornire la funzionalita richiesta dall'utente.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Eliminazione account</h2>
+        <p>
+          Quando elimini l'account, SomLumen elimina anche i dati associati al profilo, inclusi contenuti della
+          cantina, storico pairing, schede salvate e dati estratti da etichetta eventualmente associati al tuo account,
+          salvo eventuali obblighi di legge o esigenze tecniche di sicurezza.
+        </p>
+        <p>
+          Poiche le immagini dell'etichetta non vengono conservate in modo persistente oltre l'elaborazione, di norma
+          non esistono copie permanenti della foto da mantenere dopo la cancellazione.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Diritti e contatti</h2>
+        <p>
+          Puoi gestire il tuo account dall'app e usare la pagina pubblica di eliminazione account disponibile da
+          SomLumen. Per richieste legate ai dati o alla privacy, usa i riferimenti pubblicati nei canali ufficiali
+          del progetto.
+        </p>
+      </section>
+
+      <p class="meta">Ultimo aggiornamento: 22 marzo 2026</p>
+    </main>
+  </body>
+  </html>
